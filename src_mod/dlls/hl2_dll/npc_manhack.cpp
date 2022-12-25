@@ -191,7 +191,7 @@ IMPLEMENT_SERVERCLASS_ST(CNPC_Manhack, DT_NPC_Manhack)
 	SendPropIntWithMinusOneFlag	(SENDINFO(m_nEnginePitch1), 8 ),
 	SendPropFloat(SENDINFO(m_flEnginePitch1Time), 0, SPROP_NOSCALE),
 	SendPropIntWithMinusOneFlag(SENDINFO(m_nEnginePitch2), 8 ),
-	SendPropFloat(SENDINFO(m_flEnginePitch1Time), 0, SPROP_NOSCALE),
+	SendPropFloat(SENDINFO(m_flEnginePitch2Time), 0, SPROP_NOSCALE),
 END_SEND_TABLE()
 
 
