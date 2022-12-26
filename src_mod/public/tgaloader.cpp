@@ -230,7 +230,7 @@ bool GetInfo( CUtlBuffer& buf, int *width, int *height,
 #ifndef TGALOADER_USE_FOPEN
 bool SetFileSystem( CreateInterfaceFn fileSystemFactory )
 {
-	s_pFileSystem = ( IFileSystem * )fileSystemFactory( BASEFILESYSTEM_INTERFACE_VERSION, NULL );
+	s_pFileSystem = ( IFileSystem * )fileSystemFactory( FILESYSTEM_INTERFACE_VERSION, NULL );
 	if( s_pFileSystem )
 	{
 		return true;
