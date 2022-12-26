@@ -10,7 +10,7 @@
 #include "tier0/memdbgon.h"
 
 // some cvars used by player movement system
-#ifdef HL2_DLL
+#if defined(HL2_DLL) || defined(HL2_CLIENT_DLL)
 #define DEFAULT_GRAVITY_STRING	"600"
 #else
 #define DEFAULT_GRAVITY_STRING	"800"
