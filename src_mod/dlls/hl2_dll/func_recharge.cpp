@@ -657,7 +657,7 @@ void CNewRecharge::Use( CBaseEntity *pActivator, CBaseEntity *pCaller, USE_TYPE 
 
 	// This is bumped out if used within the time period
 	SetNextThink( gpGlobals->curtime + CHARGE_RATE );
-	SetThink( &CRecharge::Off );
+	SetThink( &CNewRecharge::Off );
 
 	// Time to recharge yet?
 	if ( m_flNextCharge >= gpGlobals->curtime )
@@ -708,7 +708,7 @@ void CNewRecharge::Recharge(void)
 	m_iReactivate = 0;
 	StudioFrameAdvance();
 
-	SetThink( &CRecharge::SUB_DoNothing );
+	SetThink( &CNewRecharge::SUB_DoNothing );
 }
 
 void CNewRecharge::Off(void)
@@ -740,7 +740,7 @@ void CNewRecharge::Off(void)
 				m_iReactivate = g_pGameRules->FlHEVChargerRechargeTime();
 			}
 			SetNextThink( gpGlobals->curtime + m_iReactivate );
-			SetThink(&CRecharge::Recharge);
+			SetThink(&CNewRecharge::Recharge);
 		}
 		else
 		{
