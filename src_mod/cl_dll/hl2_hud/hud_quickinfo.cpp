@@ -296,7 +296,17 @@ void CHUDQuickInfo::Paint()
 		m_lastAmmo	= ammo;
 
 		// Find how far through the current clip we are
-		float ammoPerc = (float) ammo / (float) pWeapon->GetMaxClip1();
+		float ammoPerc;
+
+		if ( pWeapon->GetMaxClip1() <= 0 )
+		{
+			ammoPerc = 0.0f;
+		}
+		else
+		{
+			ammoPerc = (float) ammo / (float) pWeapon->GetMaxClip1();
+			ammoPerc = clamp( ammoPerc, 0.0f, 1.0f );
+		}
 
 		// Warn if we're below a certain percentage of our clip's size
 		if (( pWeapon->GetMaxClip1() > 1 ) && ( ammoPerc <= ( 1.0f - CLIP_PERC_THRESHOLD )))
@@ -365,7 +375,17 @@ void CHUDQuickInfo::Paint()
 	}
 	else
 	{
-		float ammoPerc = 1.0f - ( (float) ammo / (float) pWeapon->GetMaxClip1() );
+		float ammoPerc;
+
+		if ( pWeapon->GetMaxClip1() <= 0 )
+		{
+			ammoPerc = 0.0f;
+		}
+		else
+		{
+			ammoPerc = 1.0f - ( (float) ammo / (float) pWeapon->GetMaxClip1() );
+			ammoPerc = clamp( ammoPerc, 0.0f, 1.0f );
+		}
 
 		Color ammoColor = m_warnAmmo ? gHUD.m_clrCaution : gHUD.m_clrNormal;
 		
@@ -401,4 +421,3 @@ bool CHUDQuickInfo::EventTimeElapsed( void )
 
 	return false;
 }
-
