@@ -72,7 +72,7 @@ public:
 
 private:
 	IEntityFactory *FindFactory( const char *pClassName );
-
+public:
 	CUtlDict< IEntityFactory *, unsigned short > m_Factories;
 };
 
@@ -85,6 +85,20 @@ IEntityFactoryDictionary *EntityFactoryDictionary()
 	static CEntityFactoryDictionary s_EntityFactory;
 	return &s_EntityFactory;
 }
+
+void DumpEntityFactories_f()
+{
+	CEntityFactoryDictionary *dict = ( CEntityFactoryDictionary * )EntityFactoryDictionary();
+	if ( dict )
+	{
+		for ( int i = dict->m_Factories.First(); i != dict->m_Factories.InvalidIndex(); i = dict->m_Factories.Next( i ) )
+		{
+			Warning( "%s\n", dict->m_Factories.GetElementName( i ) );
+		}
+	}
+}
+
+static ConCommand dumpentityfactories( "dumpentityfactories", DumpEntityFactories_f, "Lists all entity factory names.", FCVAR_GAMEDLL );
 
 
 //-----------------------------------------------------------------------------
