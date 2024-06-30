@@ -32,31 +32,47 @@ WeaponData
 	{
 		"weapon"
 		{
-				"font"		"WeaponIcons"
-				"character"	"k"
+				"font"		"CSweaponsSmall"
+				"character"	"H"
 		}
 		"weapon_s"
 		{	
-				"font"		"WeaponIconsSelected"
-				"character"	"k"
+				"font"		"CSweapons"
+				"character"	"H"
 		}
 		"ammo"
 		{
-				"font"		"WeaponIcons"
-				"character"	"v"
+				"font"		"CSTypeDeath"
+				"character"		"O"
 		}
 		"crosshair"
 		{
-				"font"		"Crosshairs"
-				"character"	"Q"
+				"file"		"sprites/crosshairs"
+				"x"			"0"
+				"y"			"48"
+				"width"		"24"
+				"height"	"24"
 		}
 		"autoaim"
 		{
 				"file"		"sprites/crosshairs"
-				"x"			"48"
-				"y"			"72"
+				"x"			"0"
+				"y"			"48"
 				"width"		"24"
 				"height"	"24"
+		}
+	}
+	ModelBounds
+	{
+		Viewmodel
+		{
+			Mins	"-6 -9 -15"
+			Maxs	"15 11 0"
+		}
+		World
+		{
+			Mins	"-4 -1 -3"
+			Maxs	"2 6 1"
 		}
 	}
 }
