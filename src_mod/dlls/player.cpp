@@ -140,6 +140,47 @@ ConVar	sk_player_stomach( "sk_player_stomach","1" );
 ConVar	sk_player_arm( "sk_player_arm","1" );
 ConVar	sk_player_leg( "sk_player_leg","1" );
 
+void CC_GiveCurrentAmmo( void )
+{
+	CBasePlayer *pPlayer = UTIL_PlayerByIndex(1);
+
+	if( pPlayer )
+	{
+		CBaseCombatWeapon *pWeapon = pPlayer->GetActiveWeapon();
+
+		if( pWeapon )
+		{
+			if( pWeapon->UsesPrimaryAmmo() )
+			{
+				int ammoIndex = pWeapon->GetPrimaryAmmoType();
+
+				if( ammoIndex != -1 )
+				{
+					int giveAmount;
+					giveAmount = GetAmmoDef()->MaxCarry(ammoIndex);
+					pPlayer->GiveAmmo( giveAmount, GetAmmoDef()->GetAmmoOfIndex(ammoIndex)->pName );
+				}
+			}
+			if( pWeapon->UsesSecondaryAmmo() && pWeapon->HasSecondaryAmmo() )
+			{
+				// Give secondary ammo out, as long as the player already has some
+				// from a presumeably natural source. This prevents players on XBox
+				// having Combine Balls and so forth in areas of the game that
+				// were not tested with these items.
+				int ammoIndex = pWeapon->GetSecondaryAmmoType();
+
+				if( ammoIndex != -1 )
+				{
+					int giveAmount;
+					giveAmount = GetAmmoDef()->MaxCarry(ammoIndex);
+					pPlayer->GiveAmmo( giveAmount, GetAmmoDef()->GetAmmoOfIndex(ammoIndex)->pName );
+				}
+			}
+		}
+	}
+}
+static ConCommand givecurrentammo("givecurrentammo", CC_GiveCurrentAmmo, "Give a supply of ammo for current weapon..\n", FCVAR_CHEAT );
+
 // pl
 BEGIN_SIMPLE_DATADESC( CPlayerState )
 	// DEFINE_FIELD( netname, FIELD_STRING ),  // Don't stomp player name with what's in save/restore
