@@ -658,7 +658,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"  "Counter-Strike Logo" // CSlogo.ttf
+				"name"  "Verdana"
 				"tall"  "60"
 				"weight" "0"
 				"additive" "0"
