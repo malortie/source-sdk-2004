@@ -45,11 +45,11 @@
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				Description="Copying to sampleapp\bin"
-				CommandLine="if exist .\..\..\sampleapp\bin\client.dll attrib -r .\..\..\sampleapp\bin\client.dll
-copy &quot;$(TargetDir)&quot;client.dll .\..\..\sampleapp\bin
+				Description="Copying to game\sdk\bin"
+				CommandLine="if exist .\..\..\game\sdk\bin\client.dll attrib -r .\..\..\game\sdk\bin\client.dll
+copy &quot;$(TargetDir)&quot;client.dll .\..\..\game\sdk\bin
 "
-				Outputs=".\..\..\sampleapp\bin\client.dll"/>
+				Outputs=".\..\..\game\sdk\bin\client.dll"/>
 			<Tool
 				Name="VCLinkerTool"
 				IgnoreImportLibrary="TRUE"
@@ -134,13 +134,13 @@ copy &quot;$(TargetDir)&quot;client.dll .\..\..\sampleapp\bin
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				Description="Copying to sampleapp\bin"
-				CommandLine="if exist .\..\..\sampleapp\bin\client.dll attrib -r .\..\..\sampleapp\bin\client.dll
-copy &quot;$(TargetDir)&quot;client.dll .\..\..\sampleapp\bin
-if exist .\..\..\sampleapp\bin\client.pdb attrib -r .\..\..\sampleapp\bin\client.pdb
-if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.pdb .\..\..\sampleapp\bin\client.pdb
+				Description="Copying to game\sdk\bin"
+				CommandLine="if exist .\..\..\game\sdk\bin\client.dll attrib -r .\..\..\game\sdk\bin\client.dll
+copy &quot;$(TargetDir)&quot;client.dll .\..\..\game\sdk\bin
+if exist .\..\..\game\sdk\bin\client.pdb attrib -r .\..\..\game\sdk\bin\client.pdb
+if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.pdb .\..\..\game\sdk\bin\client.pdb
 "
-				Outputs=".\..\..\sampleapp\bin\client.dll;.\..\..\sampleapp\bin\client.pdb"/>
+				Outputs=".\..\..\game\sdk\bin\client.dll;.\..\..\game\sdk\bin\client.pdb"/>
 			<Tool
 				Name="VCLinkerTool"
 				IgnoreImportLibrary="TRUE"

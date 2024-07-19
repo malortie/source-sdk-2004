@@ -40,10 +40,10 @@
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				CommandLine="if exist ..\..\..\bin\&quot;$(TargetName)&quot;.exe attrib -r ..\..\..\bin\&quot;$(TargetName)&quot;.exe
-if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot;  ..\..\..\bin
+				CommandLine="if exist ..\..\..\game\bin\&quot;$(TargetName)&quot;.exe attrib -r ..\..\..\game\bin\&quot;$(TargetName)&quot;.exe
+if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot;  ..\..\..\game\bin
 "
-				Outputs="..\..\..\bin\$(TargetName).exe"/>
+				Outputs="..\..\..\game\bin\$(TargetName).exe"/>
 			<Tool
 				Name="VCLinkerTool"
 				OutputFile=".\Debug/height2normal.exe"
@@ -112,10 +112,10 @@ if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot;  ..\..\..\bin
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				CommandLine="if exist ..\..\..\bin\&quot;$(TargetName)&quot;.exe attrib -r ..\..\..\bin\&quot;$(TargetName)&quot;.exe
-if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot;  ..\..\..\bin
+				CommandLine="if exist ..\..\..\game\bin\&quot;$(TargetName)&quot;.exe attrib -r ..\..\..\game\bin\&quot;$(TargetName)&quot;.exe
+if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot;  ..\..\..\game\bin
 "
-				Outputs="..\..\..\bin\$(TargetName).exe"/>
+				Outputs="..\..\..\game\bin\$(TargetName).exe"/>
 			<Tool
 				Name="VCLinkerTool"
 				OutputFile=".\Release/height2normal.exe"

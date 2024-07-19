@@ -41,10 +41,10 @@
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				CommandLine="if exist  ..\..\..\bin\vcpm.exe attrib -r ..\..\..\bin\vcpm.exe
-if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin\vcpm.exe
+				CommandLine="if exist  ..\..\..\game\bin\vcpm.exe attrib -r ..\..\..\game\bin\vcpm.exe
+if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\vcpm.exe
 "
-				Outputs="..\..\..\bin\vcpm.exe"/>
+				Outputs="..\..\..\game\bin\vcpm.exe"/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="odbc32.lib odbccp32.lib comsupp.lib msxml2.lib"
@@ -109,10 +109,10 @@ if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin\v
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				CommandLine="if exist  ..\..\..\bin\vcpm.exe attrib -r ..\..\..\bin\vcpm.exe
-if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin\vcpm.exe
+				CommandLine="if exist  ..\..\..\game\bin\vcpm.exe attrib -r ..\..\..\game\bin\vcpm.exe
+if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\vcpm.exe
 "
-				Outputs="..\..\..\bin\vcpm.exe"/>
+				Outputs="..\..\..\game\bin\vcpm.exe"/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalOptions="/FIXED:NO"
@@ -407,16 +407,16 @@ if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin\v
 				Name="Release|Win32">
 				<Tool
 					Name="VCCustomBuildTool"
-					CommandLine="if exist  ..\..\..\bin\vprojtomake.exe attrib -r ..\..\..\bin\vprojtomake.exe
-if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin\vprojtomake.exe
+					CommandLine="if exist  ..\..\..\game\bin\vprojtomake.exe attrib -r ..\..\..\game\bin\vprojtomake.exe
+if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\vprojtomake.exe
 "/>
 			</FileConfiguration>
 			<FileConfiguration
 				Name="Debug|Win32">
 				<Tool
 					Name="VCCustomBuildTool"
-					CommandLine="if exist  ..\..\..\bin\vprojtomake.exe attrib -r ..\..\..\bin\vprojtomake.exe
-if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin\vprojtomake.exe
+					CommandLine="if exist  ..\..\..\game\bin\vprojtomake.exe attrib -r ..\..\..\game\bin\vprojtomake.exe
+if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\vprojtomake.exe
 "/>
 			</FileConfiguration>
 		</File>
@@ -426,16 +426,16 @@ if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin\v
 				Name="Release|Win32">
 				<Tool
 					Name="VCCustomBuildTool"
-					CommandLine="if exist  ..\..\..\bin\vprojtomake.exe attrib -r ..\..\..\bin\vprojtomake.exe
-if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin\vprojtomake.exe
+					CommandLine="if exist  ..\..\..\game\bin\vprojtomake.exe attrib -r ..\..\..\game\bin\vprojtomake.exe
+if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\vprojtomake.exe
 "/>
 			</FileConfiguration>
 			<FileConfiguration
 				Name="Debug|Win32">
 				<Tool
 					Name="VCCustomBuildTool"
-					CommandLine="if exist  ..\..\..\bin\vprojtomake.exe attrib -r ..\..\..\bin\vprojtomake.exe
-if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin\vprojtomake.exe
+					CommandLine="if exist  ..\..\..\game\bin\vprojtomake.exe attrib -r ..\..\..\game\bin\vprojtomake.exe
+if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\vprojtomake.exe
 "/>
 			</FileConfiguration>
 		</File>

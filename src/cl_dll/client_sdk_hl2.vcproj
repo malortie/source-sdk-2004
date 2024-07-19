@@ -44,11 +44,11 @@
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				Description="Copying to hl2\bin"
-				CommandLine="if exist .\..\..\hl2\bin\client.dll attrib -r .\..\..\hl2\bin\client.dll
-copy &quot;$(TargetDir)&quot;client.dll .\..\..\hl2\bin
+				Description="Copying to game\hl2\bin"
+				CommandLine="if exist .\..\..\game\hl2\bin\client.dll attrib -r .\..\..\game\hl2\bin\client.dll
+copy &quot;$(TargetDir)&quot;client.dll .\..\..\game\hl2\bin
 "
-				Outputs=".\..\..\hl2\bin\client.dll"/>
+				Outputs=".\..\..\game\hl2\bin\client.dll"/>
 			<Tool
 				Name="VCLinkerTool"
 				IgnoreImportLibrary="TRUE"
@@ -132,13 +132,13 @@ copy &quot;$(TargetDir)&quot;client.dll .\..\..\hl2\bin
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				Description="Copying to hl2\bin"
-				CommandLine="if exist .\..\..\hl2\bin\client.dll attrib -r .\..\..\hl2\bin\client.dll
-copy &quot;$(TargetDir)&quot;client.dll .\..\..\hl2\bin
-if exist .\..\..\hl2\bin\client.pdb attrib -r .\..\..\hl2\bin\client.pdb
-if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.pdb .\..\..\hl2\bin\client.pdb
+				Description="Copying to game\hl2\bin"
+				CommandLine="if exist .\..\..\game\hl2\bin\client.dll attrib -r .\..\..\game\hl2\bin\client.dll
+copy &quot;$(TargetDir)&quot;client.dll .\..\..\game\hl2\bin
+if exist .\..\..\game\hl2\bin\client.pdb attrib -r .\..\..\game\hl2\bin\client.pdb
+if exist &quot;$(TargetDir)&quot;client.pdb copy &quot;$(TargetDir)&quot;client.pdb .\..\..\game\hl2\bin\client.pdb
 "
-				Outputs=".\..\..\hl2\bin\client.dll;.\..\..\hl2\bin\client.pdb"/>
+				Outputs=".\..\..\game\hl2\bin\client.dll;.\..\..\game\hl2\bin\client.pdb"/>
 			<Tool
 				Name="VCLinkerTool"
 				IgnoreImportLibrary="TRUE"

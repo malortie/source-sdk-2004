@@ -43,12 +43,12 @@
 			<Tool
 				Name="VCCustomBuildTool"
 				Description="Copying to bin"
-				CommandLine="if exist ..\..\..\bin\&quot;$(TargetName)&quot;.dll attrib -r ..\..\..\bin\&quot;$(TargetName)&quot;.dll
-copy &quot;$(TargetPath)&quot; ..\..\..\bin
-if exist ..\..\..\bin\&quot;$(TargetName)&quot;.map attrib -r ..\..\..\bin\&quot;$(TargetName)&quot;.map
-if exist &quot;$(TargetDir)&quot;&quot;$(TargetName)&quot;.map copy &quot;$(TargetDir)&quot;&quot;$(TargetName)&quot;.map ..\..\..\bin\&quot;$(TargetName)&quot;.map
+				CommandLine="if exist ..\..\..\game\bin\&quot;$(TargetName)&quot;.dll attrib -r ..\..\..\game\bin\&quot;$(TargetName)&quot;.dll
+copy &quot;$(TargetPath)&quot; ..\..\..\game\bin
+if exist ..\..\..\game\bin\&quot;$(TargetName)&quot;.map attrib -r ..\..\..\game\bin\&quot;$(TargetName)&quot;.map
+if exist &quot;$(TargetDir)&quot;&quot;$(TargetName)&quot;.map copy &quot;$(TargetDir)&quot;&quot;$(TargetName)&quot;.map ..\..\..\game\bin\&quot;$(TargetName)&quot;.map
 "
-				Outputs="..\..\..\bin\$(TargetName).dll"/>
+				Outputs="..\..\..\game\bin\$(TargetName).dll"/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="odbc32.lib odbccp32.lib ws2_32.lib"
@@ -120,12 +120,12 @@ if exist &quot;$(TargetDir)&quot;&quot;$(TargetName)&quot;.map copy &quot;$(Targ
 			<Tool
 				Name="VCCustomBuildTool"
 				Description="Copying"
-				CommandLine="if exist ..\..\..\bin\&quot;$(TargetName)&quot;.dll attrib -r ..\..\..\bin\&quot;$(TargetName)&quot;.dll
-copy &quot;$(TargetPath)&quot; ..\..\..\bin
-if exist ..\..\..\bin\&quot;$(TargetName)&quot;.map attrib -r ..\..\..\bin\&quot;$(TargetName)&quot;.map
-if exist &quot;$(TargetDir)&quot;&quot;$(TargetName)&quot;.map copy &quot;$(TargetDir)&quot;&quot;$(TargetName)&quot;.map ..\..\..\bin\&quot;$(TargetName)&quot;.map
+				CommandLine="if exist ..\..\..\game\bin\&quot;$(TargetName)&quot;.dll attrib -r ..\..\..\game\bin\&quot;$(TargetName)&quot;.dll
+copy &quot;$(TargetPath)&quot; ..\..\..\game\bin
+if exist ..\..\..\game\bin\&quot;$(TargetName)&quot;.map attrib -r ..\..\..\game\bin\&quot;$(TargetName)&quot;.map
+if exist &quot;$(TargetDir)&quot;&quot;$(TargetName)&quot;.map copy &quot;$(TargetDir)&quot;&quot;$(TargetName)&quot;.map ..\..\..\game\bin\&quot;$(TargetName)&quot;.map
 "
-				Outputs="..\..\..\bin\$(TargetName).dll"/>
+				Outputs="..\..\..\game\bin\$(TargetName).dll"/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="ws2_32.lib"

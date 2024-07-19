@@ -40,10 +40,10 @@
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				CommandLine="attrib -r ..\..\..\bin\serverplugin_empty.dll
-copy &quot;$(TargetPath)&quot; ..\..\..\bin\serverplugin_empty.dll
+				CommandLine="attrib -r ..\..\..\game\bin\serverplugin_empty.dll
+copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\serverplugin_empty.dll
 "
-				Outputs="..\..\..\bin\serverplugin_empty.dll"/>
+				Outputs="..\..\..\game\bin\serverplugin_empty.dll"/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="odbc32.lib odbccp32.lib"
@@ -117,10 +117,10 @@ copy &quot;$(TargetPath)&quot; ..\..\..\bin\serverplugin_empty.dll
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				CommandLine="attrib -r ..\..\..\bin\serverplugin_empty.dll
-copy &quot;$(TargetPath)&quot; ..\..\..\bin\serverplugin_empty.dll
+				CommandLine="attrib -r ..\..\..\game\bin\serverplugin_empty.dll
+copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\serverplugin_empty.dll
 "
-				Outputs="..\..\..\bin\serverplugin_empty.dll"/>
+				Outputs="..\..\..\game\bin\serverplugin_empty.dll"/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="odbc32.lib odbccp32.lib"
@@ -387,16 +387,16 @@ copy &quot;$(TargetPath)&quot; ..\..\..\bin\serverplugin_empty.dll
 				Name="Debug|Win32">
 				<Tool
 					Name="VCCustomBuildTool"
-					CommandLine="attrib -r ..\..\..\bin\serverplugin_empty.dll
-copy &quot;$(TargetPath)&quot; ..\..\..\bin\serverplugin_empty.dll
+					CommandLine="attrib -r ..\..\..\game\bin\serverplugin_empty.dll
+copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\serverplugin_empty.dll
 "/>
 			</FileConfiguration>
 			<FileConfiguration
 				Name="Release|Win32">
 				<Tool
 					Name="VCCustomBuildTool"
-					CommandLine="attrib -r ..\..\..\bin\serverplugin_empty.dll
-copy &quot;$(TargetPath)&quot; ..\..\..\bin\serverplugin_empty.dll
+					CommandLine="attrib -r ..\..\..\game\bin\serverplugin_empty.dll
+copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\serverplugin_empty.dll
 "/>
 			</FileConfiguration>
 		</File>
@@ -406,16 +406,16 @@ copy &quot;$(TargetPath)&quot; ..\..\..\bin\serverplugin_empty.dll
 				Name="Debug|Win32">
 				<Tool
 					Name="VCCustomBuildTool"
-					CommandLine="attrib -r ..\..\..\bin\serverplugin_empty.dll
-copy &quot;$(TargetPath)&quot; ..\..\..\bin\serverplugin_empty.dll
+					CommandLine="attrib -r ..\..\..\game\bin\serverplugin_empty.dll
+copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\serverplugin_empty.dll
 "/>
 			</FileConfiguration>
 			<FileConfiguration
 				Name="Release|Win32">
 				<Tool
 					Name="VCCustomBuildTool"
-					CommandLine="attrib -r ..\..\..\bin\serverplugin_empty.dll
-copy &quot;$(TargetPath)&quot; ..\..\..\bin\serverplugin_empty.dll
+					CommandLine="attrib -r ..\..\..\game\bin\serverplugin_empty.dll
+copy &quot;$(TargetPath)&quot; ..\..\..\game\bin\serverplugin_empty.dll
 "/>
 			</FileConfiguration>
 		</File>

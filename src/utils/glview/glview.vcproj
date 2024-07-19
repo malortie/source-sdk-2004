@@ -37,11 +37,11 @@
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				Description="Copy to ..\..\..\bin"
-				CommandLine="if exist ..\..\..\bin\glview.exe attrib -r ..\..\..\bin\glview.exe
-if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin
+				Description="Copy to ..\..\..\game\bin"
+				CommandLine="if exist ..\..\..\game\bin\glview.exe attrib -r ..\..\..\game\bin\glview.exe
+if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\game\bin
 "
-				Outputs="..\..\..\bin\glview.exe"/>
+				Outputs="..\..\..\game\bin\glview.exe"/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="glu32.lib opengl32.lib glaux.lib odbc32.lib odbccp32.lib winmm.lib"
@@ -107,11 +107,11 @@ if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin
 				CompileAs="0"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				Description="Copy to ..\..\..\bin"
-				CommandLine="if exist ..\..\..\bin\glview.exe attrib -r ..\..\..\bin\glview.exe
-if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\bin
+				Description="Copy to ..\..\..\game\bin"
+				CommandLine="if exist ..\..\..\game\bin\glview.exe attrib -r ..\..\..\game\bin\glview.exe
+if exist &quot;$(TargetPath)&quot; copy &quot;$(TargetPath)&quot; ..\..\..\game\bin
 "
-				Outputs="..\..\..\bin\glview.exe"/>
+				Outputs="..\..\..\game\bin\glview.exe"/>
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="glu32.lib opengl32.lib glaux.lib odbc32.lib odbccp32.lib winmm.lib"

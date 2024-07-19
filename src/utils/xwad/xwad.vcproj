@@ -37,10 +37,10 @@
 				DebugInformationFormat="4"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				CommandLine="if exist ..\..\..\bin\xwad.exe attrib -r ..\..\..\bin\xwad.exe
-copy &quot;$(TargetPath)&quot; ..\..\..\bin
+				CommandLine="if exist ..\..\..\game\bin\xwad.exe attrib -r ..\..\..\game\bin\xwad.exe
+copy &quot;$(TargetPath)&quot; ..\..\..\game\bin
 "
-				Outputs="..\..\..\bin\xwad.exe"/>
+				Outputs="..\..\..\game\bin\xwad.exe"/>
 			<Tool
 				Name="VCLinkerTool"
 				OutputFile=".\Debug/xwad.exe"
@@ -100,10 +100,10 @@ copy &quot;$(TargetPath)&quot; ..\..\..\bin
 				SuppressStartupBanner="TRUE"/>
 			<Tool
 				Name="VCCustomBuildTool"
-				CommandLine="if exist ..\..\..\bin\xwad.exe attrib -r ..\..\..\bin\xwad.exe
-copy &quot;$(TargetPath)&quot; ..\..\..\bin
+				CommandLine="if exist ..\..\..\game\bin\xwad.exe attrib -r ..\..\..\game\bin\xwad.exe
+copy &quot;$(TargetPath)&quot; ..\..\..\game\bin
 "
-				Outputs="..\..\..\bin\xwad.exe"/>
+				Outputs="..\..\..\game\bin\xwad.exe"/>
 			<Tool
 				Name="VCLinkerTool"
 				OutputFile=".\Release/xwad.exe"
